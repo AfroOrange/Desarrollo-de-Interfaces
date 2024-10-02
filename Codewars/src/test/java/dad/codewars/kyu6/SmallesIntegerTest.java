@@ -3,7 +3,7 @@ import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-public class Find_itTest {
+public class SmallesIntegerTest {
 
     private SmallestIntegerFinder SmallestIntegerFinder;
 

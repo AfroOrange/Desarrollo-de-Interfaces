@@ -14,7 +14,7 @@
     <maven.compiler.target>22</maven.compiler.target>
     <maven.compiler.source>22</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <exec.mainClass>dad.codewars.App</exec.mainClass>
+    <exec.mainClass>dad.codewars.kyu6.SmallesIntegerTest</exec.mainClass>
   </properties>
 
   <dependencies>
