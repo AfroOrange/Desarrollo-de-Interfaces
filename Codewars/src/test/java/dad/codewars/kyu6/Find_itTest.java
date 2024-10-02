@@ -5,20 +5,32 @@ import static org.junit.Assert.assertEquals;
 
 public class Find_itTest {
 
-    private find_it FindIt;
+    private SmallestIntegerFinder SmallestIntegerFinder;
 
     @Before
     public void setup() {
-        FindIt = new find_it();
+        SmallestIntegerFinder = new SmallestIntegerFinder();
     }
 
     @Test
-    public void test1() {
-        assertEquals(1000, FindIt.solution(0,1000));
+    public void example1(){
+        int expected = 11;
+        int actual = SmallestIntegerFinder.findSmallestInt(new int[]{78,56,232,12,11,43});
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
+    public void example2(){
+        int expected = -33;
+        int actual = SmallestIntegerFinder.findSmallestInt(new int[]{78,56,-2,12,8,-33});
+        assertEquals(expected, actual);
     }
 
     @Test
-    public void test1() {
-        assertEquals(1000, FindIt.solution(0,1000));
+    public void example3(){
+        int expected = Integer.MIN_VALUE;
+        int actual = SmallestIntegerFinder.findSmallestInt(new int[]{0,Integer.MIN_VALUE,Integer.MAX_VALUE});
+        assertEquals(expected, actual);
     }
 }
